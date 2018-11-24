@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/dialog_panel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="@drawable/top_of_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:fontFamily="@font/regular"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Interface Adapter"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/ib_close"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <SeekBar
+                android:layout_alignParentRight="true"
+                android:id="@+id/sb_red"
+                android:layout_margin="10dp"
+                android:progress="0x26"
+                android:max="255"
+                android:thumb="@drawable/r_circle"
+                android:progressDrawable="@drawable/seekbar_r"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/tv_red"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Red"
+                android:fontFamily="@font/regular"
+                android:textColor="#fff"
+                android:textSize="23sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <SeekBar
+                android:layout_alignParentRight="true"
+                android:id="@+id/sb_green"
+                android:layout_margin="10dp"
+                android:max="255"
+                android:progress="0x2f"
+                android:thumb="@drawable/g_circle"
+                android:progressDrawable="@drawable/seekbar_g"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_green"
+                android:text="Green"
+                android:fontFamily="@font/regular"
+                android:textColor="#fff"
+                android:textSize="23sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <SeekBar
+                android:layout_alignParentRight="true"
+                android:id="@+id/sb_blue"
+                android:layout_margin="10dp"
+                android:progress="0x40"
+                android:max="255"
+                android:thumb="@drawable/b_circle"
+                android:progressDrawable="@drawable/seekbar_b"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_blue"
+                android:text="Blue"
+                android:fontFamily="@font/regular"
+                android:textColor="#fff"
+                android:textSize="23sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="10dp"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/colorBackground"
+                android:id="@+id/v_color"
+                android:layout_width="90dp"
+                android:layout_height="90dp"/>
+        </android.support.v7.widget.CardView>
+        <Button
+            android:fontFamily="@font/regular"
+            android:textAllCaps="false"
+            android:layout_marginRight="5dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:text="Set"
+            android:background="@drawable/b_set_background"
+            android:id="@+id/b_set"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+        <Button
+            android:fontFamily="@font/regular"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:background="@drawable/b_reset_background"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:text="Reset"
+            android:id="@+id/b_reset"
+            android:layout_below="@id/b_set"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+</LinearLayout>
